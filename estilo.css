@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-color: black;
+	background-size:100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #d0cfcf;
+    background-image: url("ing/transferir.jpg");
+}
+ 
+
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+    display: flex;
+    color: gold;
+    border-radius:100%;
+
+}
+
+h1{
+	font-size:70px;
+	padding:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+    background:linear-gradient(to left, black 10%, rgb(23, 3, 101) 50%, rgb(113, 7, 129) 90%) ;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate2 5s linear infinite;
+
+}
+@keyframes animate2{
+to{
+    background-position:200%;
+    
+}
+}
+
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url("ing/sol.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url("ing/mercurio.jpg");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url("ing/venus.jpeg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url("ing/terra.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url("ing/marte.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url("ing/jupiter.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url("ing/saturno.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url("ing/urano.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url("ing/netuno.jpg");
+        transform: rotateY(320deg) translateZ(430px); }
+
+    
+.cabeça{
+
+    background-color: rgba(6, 6, 6, 0.127);
+    background:linear-gradient(to left, rgb(20, 0, 86) 10%, rgb(195, 208, 22) 50%, rgb(113, 7, 129) 90%) ;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+.imagem:nth-child(1) {
+    width: 210px;
+    height: 210px;
+   
+}
+
+.imagem:nth-child(2){
+    width: 105px;
+    height: 105px;
+    top: 90px;
+    left: 70px;
+}
+
+
+.imagem:nth-child(3) {
+    width: 115px;
+    height: 115px;
+    top: 90px;
+}
+
+.imagem:nth-child(4){
+    width: 130px;
+    height: 130px;
+    top: 90px;
+}
+
+.imagem:nth-child(5) {
+    width: 70px;
+    height:70px;
+    top: 120px;
+    left: 70px;
+    
+}
+
+.imagem:nth-child(7){
+    width: 200px;
+    height: 120px;
+}
+
+.imagem:nth-child(8){
+    width: 160px;
+    height: 160px;
+}
+
+.imagem:nth-child(9){
+    width: 160px;
+    height: 160px;
+}
